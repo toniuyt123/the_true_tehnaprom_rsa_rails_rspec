@@ -923,3 +923,84 @@ Can't verify CSRF token authenticity.
 Completed 200 OK in 104ms (Views: 0.2ms | ActiveRecord: 97.0ms)
 
 
+Started GET "/rsas/1" for 127.0.0.1 at 2018-01-14 22:07:32 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (40.8ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 0.2ms | ActiveRecord: 50.5ms)
+
+
+Started GET "/rsas/15" for 127.0.0.1 at 2018-01-14 23:17:36 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 6.5ms)
+
+
+  
+NoMethodError (undefined method `n' for nil:NilClass):
+  
+app/controllers/rsas_controller.rb:17:in `show'
+Started GET "/rsas/1" for 127.0.0.1 at 2018-01-14 23:17:38 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.5ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 0.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/rsas/14" for 127.0.0.1 at 2018-01-14 23:18:17 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `n' for nil:NilClass):
+  
+app/controllers/rsas_controller.rb:17:in `show'
+Started GET "/rsas/15" for 127.0.0.1 at 2018-01-14 23:18:19 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mRsa Load (0.9ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `n' for nil:NilClass):
+  
+app/controllers/rsas_controller.rb:17:in `show'
+Started GET "/rsas/16" for 127.0.0.1 at 2018-01-14 23:18:22 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `n' for nil:NilClass):
+  
+app/controllers/rsas_controller.rb:17:in `show'
+Started GET "/rsas/2" for 127.0.0.1 at 2018-01-14 23:18:24 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mRsa Load (4.5ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/rsas/1" for 127.0.0.1 at 2018-01-14 23:51:48 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rsas/1" for 127.0.0.1 at 2018-01-14 23:52:34 +0200
+Processing by RsasController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+

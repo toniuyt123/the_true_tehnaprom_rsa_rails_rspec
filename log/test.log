@@ -41,3 +41,1211 @@
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (109.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 7391], ["e", 31], ["d", 1915], ["created_at", "2018-01-14 19:41:57.063042"], ["updated_at", "2018-01-14 19:41:57.063042"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 226ms (Views: 0.8ms | ActiveRecord: 204.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"1", "rsa"=>{}}
+  [1m[36mRsa Load (1.6ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"1", "rsa"=>{}}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 268259], ["e", 66019], ["d", 13531], ["created_at", "2018-01-14 20:02:40.971801"], ["updated_at", "2018-01-14 20:02:40.971801"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"1", "rsa"=>{}}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 45421], ["e", 1515], ["d", 3915], ["created_at", "2018-01-14 20:14:36.145386"], ["updated_at", "2018-01-14 20:14:36.145386"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 73211], ["e", 28885], ["d", 23605], ["created_at", "2018-01-14 20:38:17.438347"], ["updated_at", "2018-01-14 20:38:17.438347"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+Processing by RsasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 96673], ["e", 5725], ["d", 4657], ["created_at", "2018-01-14 20:40:25.114522"], ["updated_at", "2018-01-14 20:40:25.114522"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"1", "rsa"=>{}}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 341431], ["e", 11153], ["d", 7277], ["created_at", "2018-01-14 20:40:53.935640"], ["updated_at", "2018-01-14 20:40:53.935640"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"1", "rsa"=>{}}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as JSON
+  Parameters: {"rsa"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 184601], ["e", 84565], ["d", 17125], ["created_at", "2018-01-14 20:41:32.236636"], ["updated_at", "2018-01-14 20:41:32.236636"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"#<ActionDispatch::TestResponse:0x00000000052d2d78>", "rsa"=>{}}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as JSON
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 660461], ["e", 253501], ["d", 138745], ["created_at", "2018-01-14 20:41:55.398748"], ["updated_at", "2018-01-14 20:41:55.398748"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"#<ActionDispatch::TestResponse:0x0000000004f29b68>", "rsa"=>{}}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 442613], ["e", 105193], ["d", 183277], ["created_at", "2018-01-14 20:42:13.583037"], ["updated_at", "2018-01-14 20:42:13.583037"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+Processing by RsasController#show as JSON
+  Parameters: {"id"=>"#<ActionDispatch::TestResponse:0x0000000003d02638>", "rsa"=>{}}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (14.9ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 20:46:24.015645"], ["updated_at", "2018-01-14 20:46:24.015645"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 18.0ms)
+Error occurred while parsing request parameters.
+Contents:
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 20:46:36.351743"], ["updated_at", "2018-01-14 20:46:36.351743"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 20:48:28.149972"], ["updated_at", "2018-01-14 20:48:28.149972"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 20:53:03.204340"], ["updated_at", "2018-01-14 20:53:03.204340"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+Processing by RsasController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 20:58:18.427390"], ["updated_at", "2018-01-14 20:58:18.427390"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:00:26.257666"], ["updated_at", "2018-01-14 21:00:26.257666"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 6.5ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:00:44.537224"], ["updated_at", "2018-01-14 21:00:44.537224"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (34.0ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 146507], ["e", 2425], ["d", 2581], ["created_at", "2018-01-14 21:07:09.910923"], ["updated_at", "2018-01-14 21:07:09.910923"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 36.2ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:07:10.229631"], ["updated_at", "2018-01-14 21:07:10.229631"]]
+  [1m[35m (2.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 4.0ms)
+  [1m[36mRsa Load (0.7ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as JSON
+  Parameters: {"rsa"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 777299], ["e", 277781], ["d", 14885], ["created_at", "2018-01-14 21:09:06.191866"], ["updated_at", "2018-01-14 21:09:06.191866"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:09:06.203953"], ["updated_at", "2018-01-14 21:09:06.203953"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as JSON
+  Parameters: {"rsa"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 151891], ["e", 21779], ["d", 3803], ["created_at", "2018-01-14 21:11:37.254817"], ["updated_at", "2018-01-14 21:11:37.254817"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+  [1m[36mRsa Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:11:37.301430"], ["updated_at", "2018-01-14 21:11:37.301430"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 298297], ["e", 17677], ["d", 34893], ["created_at", "2018-01-14 21:12:57.180026"], ["updated_at", "2018-01-14 21:12:57.180026"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:12:57.187158"], ["updated_at", "2018-01-14 21:12:57.187158"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 57181], ["e", 1751], ["d", 911], ["created_at", "2018-01-14 21:15:13.567766"], ["updated_at", "2018-01-14 21:15:13.567766"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:15:13.573179"], ["updated_at", "2018-01-14 21:15:13.573179"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.7ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 6.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 87007], ["e", 35459], ["d", 7779], ["created_at", "2018-01-14 21:31:08.917733"], ["updated_at", "2018-01-14 21:31:08.917733"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 53ms (Views: 0.4ms | ActiveRecord: 37.0ms)
+  [1m[36mRsa Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (4.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:31:08.979691"], ["updated_at", "2018-01-14 21:31:08.979691"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+  [1m[36mRsa Load (0.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (27.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (87.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 21:51:33.585225"], ["updated_at", "2018-01-14 21:51:33.585225"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 179ms (Views: 0.2ms | ActiveRecord: 103.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 278471], ["e", 21611], ["d", 10931], ["created_at", "2018-01-14 21:51:33.679301"], ["updated_at", "2018-01-14 21:51:33.679301"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:51:33.698376"], ["updated_at", "2018-01-14 21:51:33.698376"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 5.0ms)
+  [1m[36mRsa Load (2.8ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.5ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 21:52:38.503318"], ["updated_at", "2018-01-14 21:52:38.503318"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 58ms (Views: 0.7ms | ActiveRecord: 5.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 2217], ["e", 337], ["d", 565], ["created_at", "2018-01-14 21:52:38.512032"], ["updated_at", "2018-01-14 21:52:38.512032"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+  [1m[36mRsa Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:52:38.523279"], ["updated_at", "2018-01-14 21:52:38.523279"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 21:52:55.796874"], ["updated_at", "2018-01-14 21:52:55.796874"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 57ms (Views: 0.2ms | ActiveRecord: 8.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 187619], ["e", 9983], ["d", 44951], ["created_at", "2018-01-14 21:52:55.805974"], ["updated_at", "2018-01-14 21:52:55.805974"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:52:55.812312"], ["updated_at", "2018-01-14 21:52:55.812312"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 21:58:17.047414"], ["updated_at", "2018-01-14 21:58:17.047414"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 123ms (Views: 0.2ms | ActiveRecord: 13.0ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1", "mid"=>"8"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 AND "messages"."rid" = $2 LIMIT $3[0m  [["id", 8], ["rid", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 1ms (Views: 0.2ms | ActiveRecord: 13.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (106.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 78769], ["e", 1727], ["d", 30563], ["created_at", "2018-01-14 21:58:17.118242"], ["updated_at", "2018-01-14 21:58:17.118242"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 109ms (Views: 0.2ms | ActiveRecord: 106.4ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:58:17.258923"], ["updated_at", "2018-01-14 21:58:17.258923"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 21:59:14.349719"], ["updated_at", "2018-01-14 21:59:14.349719"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 5.8ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Error occurred while parsing request parameters.
+Contents:
+
+
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 193717], ["e", 1703], ["d", 10427], ["created_at", "2018-01-14 21:59:14.363092"], ["updated_at", "2018-01-14 21:59:14.363092"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 21:59:14.369677"], ["updated_at", "2018-01-14 21:59:14.369677"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (23.8ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (66.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:01:32.352017"], ["updated_at", "2018-01-14 22:01:32.352017"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 165ms (Views: 0.2ms | ActiveRecord: 102.6ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (17.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 177959], ["e", 30451], ["d", 31051], ["created_at", "2018-01-14 22:01:32.483850"], ["updated_at", "2018-01-14 22:01:32.483850"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:01:32.523275"], ["updated_at", "2018-01-14 22:01:32.523275"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+  [1m[36mRsa Load (3.5ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:02:10.247493"], ["updated_at", "2018-01-14 22:02:10.247493"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 81ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 216017], ["e", 3529], ["d", 8569], ["created_at", "2018-01-14 22:02:10.265350"], ["updated_at", "2018-01-14 22:02:10.265350"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:02:10.308382"], ["updated_at", "2018-01-14 22:02:10.308382"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.4ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:02:24.430320"], ["updated_at", "2018-01-14 22:02:24.430320"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 65ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 497143], ["e", 25033], ["d", 2977], ["created_at", "2018-01-14 22:02:24.437609"], ["updated_at", "2018-01-14 22:02:24.437609"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:02:24.457845"], ["updated_at", "2018-01-14 22:02:24.457845"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+  [1m[36mRsa Load (1.9ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (3.5ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:03:02.216035"], ["updated_at", "2018-01-14 22:03:02.216035"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 8.3ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 350239], ["e", 39247], ["d", 16879], ["created_at", "2018-01-14 22:03:02.221651"], ["updated_at", "2018-01-14 22:03:02.221651"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:03:02.227451"], ["updated_at", "2018-01-14 22:03:02.227451"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:03:19.056464"], ["updated_at", "2018-01-14 22:03:19.056464"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 27323], ["e", 271], ["d", 5167], ["created_at", "2018-01-14 22:03:19.063553"], ["updated_at", "2018-01-14 22:03:19.063553"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:03:19.067958"], ["updated_at", "2018-01-14 22:03:19.067958"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.6ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (16.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:05:43.863174"], ["updated_at", "2018-01-14 22:05:43.863174"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 56ms (Views: 0.3ms | ActiveRecord: 20.9ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se! nqkoi da pomaga!! mangali li ste!!@$(@*$&@(*&\"", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907,29315,33667,84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,29315,37116,5100,33667,60500,5100,86992,36607,29315,86992,36607,29315,43171,41890,45730,81907,81907,40806,36991,18282,40806,20180,36991,36645,40806,18282,20180,36645,6614"], ["rid", 1], ["created_at", "2018-01-14 22:05:44.031724"], ["updated_at", "2018-01-14 22:05:44.031724"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 147ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:05:44.272715"], ["updated_at", "2018-01-14 22:05:44.272715"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (6.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 131513], ["e", 55847], ["d", 27707], ["created_at", "2018-01-14 22:05:44.292395"], ["updated_at", "2018-01-14 22:05:44.292395"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 6.7ms)
+  [1m[36mRsa Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (2.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:05:44.299906"], ["updated_at", "2018-01-14 22:05:44.299906"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+  [1m[36mRsa Load (4.6ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (6.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:06:52.933082"], ["updated_at", "2018-01-14 22:06:52.933082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 50ms (Views: 0.2ms | ActiveRecord: 5.1ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se! nqkoi da pomaga!! mangali li ste!!@$(@*$&@(*&\"", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907,29315,33667,84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,29315,37116,5100,33667,60500,5100,86992,36607,29315,86992,36607,29315,43171,41890,45730,81907,81907,40806,36991,18282,40806,20180,36991,36645,40806,18282,20180,36645,6614"], ["rid", 1], ["created_at", "2018-01-14 22:06:53.082887"], ["updated_at", "2018-01-14 22:06:53.082887"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 139ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (5.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 13571], ["e", 833], ["d", 1217], ["created_at", "2018-01-14 22:06:53.138082"], ["updated_at", "2018-01-14 22:06:53.138082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 9.7ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:06:53.156711"], ["updated_at", "2018-01-14 22:06:53.156711"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:09:58.208913"], ["updated_at", "2018-01-14 22:09:58.208913"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 47ms (Views: 0.1ms | ActiveRecord: 7.1ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se! nqkoi da pomaga!!@$(@*$&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907,29315,33667,84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:09:58.305142"], ["updated_at", "2018-01-14 22:09:58.305142"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 264373], ["e", 20789], ["d", 6929], ["created_at", "2018-01-14 22:09:58.359892"], ["updated_at", "2018-01-14 22:09:58.359892"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 35ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+  [1m[36mRsa Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:09:58.373655"], ["updated_at", "2018-01-14 22:09:58.373655"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:12:23.144975"], ["updated_at", "2018-01-14 22:12:23.144975"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 61ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:12:23.232918"], ["updated_at", "2018-01-14 22:12:23.232918"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 80ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[36mMessage Load (9.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (2.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 119579], ["e", 25451], ["d", 33935], ["created_at", "2018-01-14 22:12:23.295134"], ["updated_at", "2018-01-14 22:12:23.295134"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+  [1m[36mRsa Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:12:23.311710"], ["updated_at", "2018-01-14 22:12:23.311710"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:13:01.557564"], ["updated_at", "2018-01-14 22:13:01.557564"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 125ms (Views: 0.2ms | ActiveRecord: 13.7ms)
+  [1m[36mMessage Load (4.8ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (6.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><wow&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (2.0ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,27283,32376,27283,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:13:01.776746"], ["updated_at", "2018-01-14 22:13:01.776746"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 197ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (2.7ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 75947], ["e", 30155], ["d", 31451], ["created_at", "2018-01-14 22:13:01.847601"], ["updated_at", "2018-01-14 22:13:01.847601"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+  [1m[36mRsa Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (4.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:13:01.875181"], ["updated_at", "2018-01-14 22:13:01.875181"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 5.0ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:13:12.755410"], ["updated_at", "2018-01-14 22:13:12.755410"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 4.9ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><wo&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.7ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,27283,32376,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:13:12.842775"], ["updated_at", "2018-01-14 22:13:12.842775"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (5.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 110633], ["e", 26389], ["d", 14905], ["created_at", "2018-01-14 22:13:12.886145"], ["updated_at", "2018-01-14 22:13:12.886145"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 10.6ms)
+  [1m[36mRsa Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (5.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:13:12.904657"], ["updated_at", "2018-01-14 22:13:12.904657"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 5.9ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (1.0ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:13:22.802621"], ["updated_at", "2018-01-14 22:13:22.802621"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 124ms (Views: 0.2ms | ActiveRecord: 17.4ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:13:22.952716"], ["updated_at", "2018-01-14 22:13:22.952716"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 149ms (Views: 0.2ms | ActiveRecord: 5.1ms)
+  [1m[36mMessage Load (3.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (4.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 612893], ["e", 60581], ["d", 40493], ["created_at", "2018-01-14 22:13:23.037822"], ["updated_at", "2018-01-14 22:13:23.037822"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 4.9ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:13:23.047607"], ["updated_at", "2018-01-14 22:13:23.047607"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:13:48.340692"], ["updated_at", "2018-01-14 22:13:48.340692"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 54ms (Views: 0.6ms | ActiveRecord: 5.0ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:13:48.429772"], ["updated_at", "2018-01-14 22:13:48.429772"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 81ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (7.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 104389], ["e", 15661], ["d", 3691], ["created_at", "2018-01-14 22:13:48.463349"], ["updated_at", "2018-01-14 22:13:48.463349"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[36mRsa Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:13:48.486875"], ["updated_at", "2018-01-14 22:13:48.486875"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 5.0ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:17:59.008477"], ["updated_at", "2018-01-14 22:17:59.008477"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 38ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:17:59.086648"], ["updated_at", "2018-01-14 22:17:59.086648"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 76ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 118003], ["e", 34383], ["d", 33039], ["created_at", "2018-01-14 22:17:59.102319"], ["updated_at", "2018-01-14 22:17:59.102319"]]
+  [1m[35m (5.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.4ms)
+  [1m[36mRsa Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35m (3.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:17:59.118920"], ["updated_at", "2018-01-14 22:17:59.118920"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:18:12.493773"], ["updated_at", "2018-01-14 22:18:12.493773"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 55ms (Views: 0.2ms | ActiveRecord: 9.0ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:18:12.562040"], ["updated_at", "2018-01-14 22:18:12.562040"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 65ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 9563], ["e", 4399], ["d", 1399], ["created_at", "2018-01-14 22:18:12.580367"], ["updated_at", "2018-01-14 22:18:12.580367"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[36mRsa Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:18:12.586790"], ["updated_at", "2018-01-14 22:18:12.586790"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:18:26.398812"], ["updated_at", "2018-01-14 22:18:26.398812"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 39ms (Views: 0.2ms | ActiveRecord: 5.1ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:18:26.468983"], ["updated_at", "2018-01-14 22:18:26.468983"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 67ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 40741], ["e", 2357], ["d", 2233], ["created_at", "2018-01-14 22:18:26.481073"], ["updated_at", "2018-01-14 22:18:26.481073"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:18:26.486908"], ["updated_at", "2018-01-14 22:18:26.486908"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.3ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.4ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (13.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:19:18.912672"], ["updated_at", "2018-01-14 22:19:18.912672"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 113ms (Views: 0.3ms | ActiveRecord: 33.1ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (10.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:19:19.076469"], ["updated_at", "2018-01-14 22:19:19.076469"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 142ms (Views: 0.2ms | ActiveRecord: 10.7ms)
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (1.3ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (23.4ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 71177], ["e", 16501], ["d", 6001], ["created_at", "2018-01-14 22:19:19.101212"], ["updated_at", "2018-01-14 22:19:19.101212"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 23.6ms)
+  [1m[36mRsa Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:19:19.139752"], ["updated_at", "2018-01-14 22:19:19.139752"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"hluzga se!", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "77827,86992,45618,89549,60500,5100,29315,43171,45730,81907"], ["rid", 1], ["created_at", "2018-01-14 22:19:39.695176"], ["updated_at", "2018-01-14 22:19:39.695176"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 5.9ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>"qkoi da pomaga!!@$(@*$$@>?><&@(*&", "id"=>"1"}
+  [1m[36mRsa Load (0.2ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "rid", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "84275,22898,32376,36607,29315,54582,5100,29315,22673,32376,37116,5100,60500,5100,81907,81907,40806,36991,18282,40806,20180,36991,36991,40806,26156,77688,26156,44213,36645,40806,18282,20180,36645"], ["rid", 1], ["created_at", "2018-01-14 22:19:39.765820"], ["updated_at", "2018-01-14 22:19:39.765820"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 67ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by MessagesController#decrypt as HTML
+  Parameters: {"message"=>"77827,86992,45618,89549,60500,5100,29315,43171,45730,81907", "id"=>"1"}
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 4417], ["e", 17], ["d", 593], ["created_at", "2018-01-14 22:19:39.776127"], ["updated_at", "2018-01-14 22:19:39.776127"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by RsasController#create as HTML
+  Parameters: {"d"=>"12", "e"=>"2", "n"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "rsas" ("n", "e", "d", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["n", 3], ["e", 2], ["d", 12], ["created_at", "2018-01-14 22:19:39.781881"], ["updated_at", "2018-01-14 22:19:39.781881"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mRsa Load (0.1ms)[0m  [1m[34mSELECT  "rsas".* FROM "rsas" WHERE "rsas"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
